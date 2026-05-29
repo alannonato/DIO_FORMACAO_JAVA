@@ -1,18 +1,55 @@
-## Getting Started
+# Desafio Controle de Fluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Projeto simples em Java para praticar controle de fluxo e tratamento de exceções.
 
-## Folder Structure
+## Sobre
 
-The workspace contains two folders by default, where:
+O programa `Contador` lê dois números inteiros do usuário e imprime uma sequência com base na diferença entre eles.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Se o segundo número for menor ou igual ao primeiro, o programa lança uma exceção e mostra uma mensagem de erro.
+- Caso contrário, ele imprime "Imprimindo o número: X" para cada valor até a diferença.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do projeto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- `src/Contador.java` - classe principal com entrada pelo terminal e lógica de contagem.
+- `src/ParametrosInvalidosException.java` - exceção personalizada usada quando os parâmetros são inválidos.
 
-## Dependency Management
+## Como executar
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Navegue até a pasta do projeto:
+
+```powershell
+cd c:\Users\alant\Source\Repos\DIO_FORMACAO_JAVA\DesafioControleFluxo
+```
+
+2. Compile o código Java:
+
+```powershell
+javac src\*.java
+```
+
+3. Execute o programa:
+
+```powershell
+java -cp src Contador
+```
+
+## Exemplo de uso
+
+```text
+Digite o primeiro parâmetro:
+2
+Digite o segundo parâmetro:
+5
+Imprimindo o número: 1
+Imprimindo o número: 2
+Imprimindo o número: 3
+```
+
+## Personalização
+
+Se quiser, você pode estender o projeto para:
+
+- suportar valores decrescentes;
+- mostrar os próprios números em vez de uma sequência incremental;
+- aceitar parâmetros por linha de comando.
