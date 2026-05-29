@@ -19,7 +19,7 @@ O programa `Contador` lê dois números inteiros do usuário e imprime uma sequ�
 1. Navegue até a pasta do projeto:
 
 ```powershell
-cd c:\Users\alant\Source\Repos\DIO_FORMACAO_JAVA\DesafioControleFluxo
+cd  \DIO_FORMACAO_JAVA\DesafioControleFluxo
 ```
 
 2. Compile o código Java:
